@@ -1,6 +1,6 @@
 # Kibana and Elasticsearch with docker-compose
 
-```console
+```bash
 docker-compose up
 ```
 ## open kibana 
@@ -18,3 +18,33 @@ method http put --> http://localhost:9200/indexname
     }
 }
 ```
+
+# send data to Elasticsearch
+script that sends data from a local python program to Elasticsearch. 
+
+## Create virtualenv
+```bash
+virtualenv venv
+```
+## Activate virtualenv
+```bash
+.\venv\Scripts\activate.ps1
+```
+or
+```bash
+.\venv\Scripts\activate.bat
+```
+
+## Installation
+```bash
+pip install -r requirements.txt
+```
+
+## Test
+```bash
+py .\main.py
+```
+
+## imagen Kibana
+![alt](images/kibana.png)
+
